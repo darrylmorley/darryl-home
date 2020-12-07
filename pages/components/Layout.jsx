@@ -24,6 +24,13 @@ const Layout = ({ children }) => {
               </a>
             </Link>
           </li>
+          <li>
+            <Link href="/advanced-hooks">
+              <a>
+                Advanced Hooks ToDo's
+              </a>
+            </Link>
+          </li>
         </ul>
       </nav>
       <main>{children}</main>
