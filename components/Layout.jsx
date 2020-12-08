@@ -38,6 +38,9 @@ const Layout = ({ children }) => {
               </a>
             </Link>
           </li>
+          <li>
+            <a href="https://nextjs-github-search-app.vercel.app/">NextJS Github Search API Example</a>
+          </li>
         </ul>
       </nav>
       <main>{children}</main>
