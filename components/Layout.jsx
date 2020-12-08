@@ -31,6 +31,13 @@ const Layout = ({ children }) => {
               </a>
             </Link>
           </li>
+          <li>
+            <Link href="/use-reducer">
+              <a>
+                useReducer - Login Example
+              </a>
+            </Link>
+          </li>
         </ul>
       </nav>
       <main>{children}</main>

@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react'
-import Layout from './components/Layout'
+import Layout from '../components/Layout'
 
 const Home = () => {
   const [search, setSearch] = useState('')
@@ -31,7 +31,7 @@ const Home = () => {
   return (
     <Layout>
       <div>
-        <h1>Async React Hooks</h1>
+        <h1>Async React Hooks - Giffy API Search</h1>
         <form onSubmit={e => {
           e.preventDefault()
           setQuery(search)

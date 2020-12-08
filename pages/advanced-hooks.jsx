@@ -1,4 +1,4 @@
-import Layout from './components/Layout'
+import Layout from '../components/Layout'
 import React, { useReducer, useContext, useEffect, useRef } from 'react'
 
 function appReducer(state, action) {
@@ -58,7 +58,7 @@ const AdvancedHooks = () => {
   return (
     <Context.Provider value={dispatch}>
       <Layout>
-        <h1>Advanced Hooks - ToDo's</h1>
+        <h1>Advanced Hooks - ToDo Example</h1>
         <button onClick={() => dispatch({ type: 'add' })}>New ToDo</button>
         <TodosList items={state} />
       </Layout>
