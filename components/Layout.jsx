@@ -3,12 +3,12 @@ import Head from 'next/head'
 
 const Layout = ({ children }) => {
   return (
-    <div>
+    <div className="flex flex-col min-h-screen p-4">
       <Head>
         <title>Darryls' Home</title>
+        <meta property="og:title" content="Darryls' Home" key="title" />
       </Head>
-      <nav>
-        <h1>Darryls' Stuff</h1>
+      <nav className="mt-2">
         <ul>
           <li>
             <Link href="/">
@@ -43,7 +43,17 @@ const Layout = ({ children }) => {
           </li>
         </ul>
       </nav>
-      <main>{children}</main>
+      <main className="flex-grow mt-12">{children}</main>
+      <footer>
+        <ul>
+          <li>
+            Github: <a href="https://github.com/darrylmorley" target="_blank">darrylmorley</a>
+          </li>
+          <li>
+            Email: <a href="mailto:darrylmorley.uk@gmail.com">darrylmorley.uk@gmail.com</a>
+          </li>
+        </ul>
+      </footer>
     </div>
   )
 }
